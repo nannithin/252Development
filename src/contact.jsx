@@ -60,7 +60,7 @@ const Contact = ({darkmode}) => {
                 theme: alertcolor,
                 });;
             // email.js for contact form
-            emailjs.sendForm('service_5j2web6', 'template_pkwfg8e', form.current, 'JnyNkK0qdyyrIgRuX')
+            emailjs.sendForm('serviceid', 'templete_id', form.current, 'accound_id')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
