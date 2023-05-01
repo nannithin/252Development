@@ -1,55 +1,48 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body{
-    
-    font-family: 'Poppins', sans-serif;
+body {
+	font-family: 'Poppins', sans-serif;
 }
-html{
-    scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }
 
-.card:hover{
-    transform: scale(1.07);
+/* .card:hover {
+	transform: scale(1.05);
+} */
+
+li {
+	padding-left: 10px;
+	text-transform: capitalize;
+	font-size: 20px;
 }
 
-
-li{
-    padding-left: 10px;
-    text-transform: capitalize;
-    font-size: 20px;
+.input {
+	margin: 19px 0px;
 }
+.input input {
+	width: 100%;
+	padding: 10px;
+	outline: none;
 
-.input{
-    margin: 19px 0px;
-    
-}
-.input input{
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    
-    border-radius: 20px;
-    padding-left: 43px;
-    color: #ccc;
+	border-radius: 20px;
+	padding-left: 43px;
+	color: #ccc;
 }
 
-
-.input textarea{
-    width: 100%;
-    border-radius: 20px;
-    resize: none;
-    padding: 10px;
-    outline: none;
-    color: #bbb;
+.input textarea {
+	width: 100%;
+	border-radius: 20px;
+	resize: none;
+	padding: 10px;
+	outline: none;
+	color: #bbb;
 }
-.i{
-    transition: 0.3s;
+.i {
+	transition: 0.3s;
 }
-.i:hover{
-    background-color: #3e3cdb;
+.i:hover {
+	background-color: #3e3cdb;
 }

@@ -7,7 +7,6 @@ import Footer from "./footer";
 
 const App= () =>{
   const [darkmode,setDarkmode] = useState(localStorage.getItem("darkmode")==="true");
-  const token = "OTExODEyMjY1ODU3MTM0NjIy.Grj4u5.hjHULgXh5GvZL3fcZWW9W4lBEx3N-Al_k-XQ5U"
   const Togglehandler = () =>{
     darkmode == false ? setDarkmode(true) : setDarkmode(false);
   }
