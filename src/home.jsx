@@ -9,6 +9,11 @@ import { HiArrowSmLeft, HiArrowSmRight } from 'react-icons/Hi';
 import Discord from './discord';
 import Fade from 'react-reveal/Fade';
 import { FaArrowUp } from 'react-icons/Fa';
+import bolt from './assets/62ff4b98d3c59f802078d128e297556f.png';
+import gaana from './assets/11f4308eda3ef8922e3c9b0809016def (1).png';
+import aqua from './assets/2a9828b29fa40509e263d785a78f570e.png';
+import oyo from './assets/e3d2f362ac41c77c3dc243acdf307317.png';
+import siri from './assets/ad5df6faae2ced27be8c7252cbbe24d2.png';
 
 const Home = () => {
 	const [vis, setVis] = useState(null);
@@ -37,7 +42,7 @@ const Home = () => {
 		speed: 500,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplayspeed: 5000,
 		responsive: [
 			{
@@ -160,11 +165,11 @@ const Home = () => {
 					</h1>
 
 					<Slider ref={arrowRef} {...settings}>
-						<Card name="Gaana" />
-						<Card name="Bolt" />
-						<Card name="OYO" />
-						<Card name="Alex" />
-						<Card name="Aqua" />
+						<Card name="Gaana" logo={gaana} description={"The perfect music bot for your server! High-quality music, 24/7, permission system and more! Supports Spotify, Soundcloud..."} />
+						<Card name="Bolt" logo={bolt} description={"The perfect music bot for your server! High-quality music, 24/7, permission system and more! Supports Spotify, Soundcloud..."}/>
+						<Card name="OYO" logo={oyo} />
+						<Card name="Alex" logo={siri} />
+						<Card name="Aqua" logo={aqua} description={"High quality music bot with free volume, 24/7 music, Audio filters, DJ system, bot channels, Autoplay, Custom playlists, and much more!"} />
 					</Slider>
 					<div className="flex justify-center gap-5 md:gap-9 my-3 md:my-5">
 						<button
