@@ -60,7 +60,7 @@ const Contact = ({darkmode}) => {
                 theme: alertcolor,
                 });;
             // email.js for contact form
-            emailjs.sendForm('serviceid', 'templete_id', form.current, 'accound_id')
+            emailjs.sendForm(process.envREACT_SERVICE_ID, process.envREACT_TEMPLETE_ID, form.current, process.envREACT_APP_ID)
           .then((result) => {
               console.log(result.text);
           }, (error) => {

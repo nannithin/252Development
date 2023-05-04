@@ -11,7 +11,7 @@ const Nav = ({darkmode,toggle}) =>{
                 <h1 className="flex gap-1 font-bold text-xl mx-5 text-white">
                     <span className="mt-[3px]"><AiFillCode /></span> 252
                 </h1>
-                <ul className={`md:flex z-[-1] md:static absolute ${!open ? `md:visible invisible top-[-100%]` : `visible top-[70px]`} md:bg-transparent md:shadow-none shadow-lg md:gap-[4vw] w-full p-4 md:p-0 md:w-fit md:text-white duration-300 z-[0] ${!darkmode?'bg-white':'bg-[#181826] border-b-[1px] md:border-none border-[#333]'}`}>
+                <ul className={`md:flex z-[-100] md:static absolute ${!open ? `md:visible invisible top-[-100%]` : `visible top-[70px]`} md:bg-transparent md:shadow-none shadow-lg md:gap-[4vw] w-full p-4 md:p-0 md:w-fit md:text-white duration-300 z-[0] ${!darkmode?'bg-white':'bg-[#181826] border-b-[1px] md:border-none border-[#333]'}`}>
                     <a href="#home"><li className="pb-3 md:pb-0 dark:text-white md:text-white text-black   cursor-pointer">home</li></a>
                     <a href="#ourbots"><li className="pb-3 md:pb-0 dark:text-white text-black md:text-white   cursor-pointer">Our Bots</li></a>
                     <a href="#about"><li className=" pb-3 md:pb-0 dark:text-white text-black md:text-white  cursor-pointer">About</li></a>
