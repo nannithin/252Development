@@ -48,6 +48,7 @@ const Contact = ({darkmode}) => {
                 progress: undefined,
                 theme: alertcolor,
                 });
+                console.log(PROCESS.env.REACT_APP_ID)
         }else{
             toast.success('message sent sucessfully', {
                 position: "top-center",
@@ -60,7 +61,7 @@ const Contact = ({darkmode}) => {
                 theme: alertcolor,
                 });;
             // email.js for contact form
-            emailjs.sendForm(process.env.REACT_SERVICE_ID, process.env.REACT_TEMPLETE_ID, form.current, process.env.REACT_APP_ID)
+            emailjs.sendForm(Process.env.REACT_SERVICE_ID, Process.env.REACT_TEMPLETE_ID, form.current, Process.env.REACT_APP_ID)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
